@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>✖️ App by Leo ✖️</title>
+   
+    <!-- Google Fonts -->
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Orbitron:wght@500&family=Roboto:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+   <!-- Bootstrap Icons -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+   <!-- My CSS -->
+   <link rel="stylesheet" href="style.css" />
+
+
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h3><span class="secure">UNIT</span> CONVERTER</h3>
+        <p class="subtitle tap-animate">Metric <span class="arrows"><i class="bi bi-arrow-left-right"></i></span>
+          Imperial</p>
+      <div><div><input pattern="[0-9]*" inputmode="decimal" type="text" id="user-input" placeholder="0" ><p class="enter-value" >Enter value you wish to convert</p></div>
+        <button class="generate-btn" id="convert-btn"><a href="#results">Convert</a></button>
+      </div>
+      <hr><p class="tap" id="copy-pass-el">
+      </p>
+      <div class="result-containers" id="results">
+      <h2>LENGTH</h2>
+      <h4>Meters <i class="bi bi-arrow-left-right"></i> Feet</h4>
+      <p class="conversions-p" id="meters-feet"></p>
+      <p class="conversions-p" id="feet-meters"></p> 
+      </div>
+      <div class="result-containers">
+        <h2>VOLUME</h2>
+        <h4>Liters <i class="bi bi-arrow-left-right"></i> Gallons</h4>
+        <p class="conversions-p" id="liters-gallons"></p>
+        <p class="conversions-p" id="gallons-liters"></p> 
+        </div>
+        <div class="result-containers">
+          <h2>MASS</h2>
+          <h4>Kilos <i class="bi bi-arrow-left-right"></i> Pounds</h4>
+          <p class="conversions-p" id="kilograms-pounds"></p>
+          <p class="conversions-p" id="pounds-kilograms"></p> 
+          </div>
+        
+          <div class="result-containers">
+            <h2>BONUS</h2>
+            <h4>Centimeters <i class="bi bi-arrow-left-right"></i> Inches</h4>
+            <p class="conversions-p" id="cm-in"></p>
+            <p class="conversions-p" id="in-cm"></p> <br>
+            <h4>Feet <i class="bi bi-arrow-left-right"></i> Inches</h4>
+            <p class="conversions-p" id="ft-in"></p>
+            <p class="conversions-p" id="in-ft"></p> 
+            </div>
+      
+      <!-- <div class="text-bottom" >
+      <p class="description">Your password consists of <span class="description-span">14 random characters</span>, including symbols, numbers, as well as lower and upper case letters.</p>
+    </div> -->
+    <div id="footer">
+      <p>Made with 🤍 in KC</p>
+    </div>
+  <div class="spacer"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
